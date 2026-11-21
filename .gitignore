@@ -1,0 +1,22 @@
+# 个人数据——绝不入库
+cv/CV.md
+data/
+*.db
+
+# OpenSpec 工作流工件与 agent 工具配置（用户指示：不入库）
+openspec/
+.agents/
+
+# 模型权重（用 llm/download_model.sh 下载，档位见脚本头注释）
+llm/models/
+
+# 构建产物：release/ 是 node src/build.js 的拼装输出（安装文件），本地生成不入库
+release/
+
+# 运行时
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
